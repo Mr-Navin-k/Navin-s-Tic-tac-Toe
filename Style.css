@@ -1,0 +1,101 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+#btn{
+    height: 30px;
+    width: 90px;
+    border-radius:1rem;
+    border: 1.5px solid black;
+    background-color:antiquewhite;
+    margin-left:80px;
+}
+#btn:hover{
+    color:white;
+    background-color: goldenrod;
+    border: 1.5px solid black;
+    scale: 1.05;
+}
+button:hover{
+    color:rgba(red, green, blue, 0.2);
+    /* background-color: goldenrod; */
+    border: 1.5px solid black;
+    scale: 1.05;
+}
+@media (max-width:525px){
+    body{
+    background-color:palegoldenrod;
+}
+p .msg{
+    font-size: x-large;
+}
+}
+/* Tic tac toi game */
+body{
+    text-align: center;
+}
+.new-btn,.reset-btn {
+    height: 30px;
+    width: 90px;
+    border-radius:1rem;
+    border: 1.5px solid black;
+    background-color:antiquewhite;
+    margin-top: 10px;
+    margin-bottom: 25px;
+    margin-left: 10px;
+}
+.parent{
+    height: 390px;
+    width: 100wh;
+    /* background-color: red; */
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.game{
+    height: 22rem;
+    width: 22rem;
+    /* background-color: cadetblue; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap:2vmax;
+}
+.box{
+    height: 100px;
+    width: 90px;
+    box-shadow: 0 0 10px 1px darkorange;
+    border: none;
+    font-size: 3vmax;
+    color: orange;
+    background-color:gray;
+    border-radius: 1rem;
+}
+/* .msg-con{
+    height: 80px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+} */
+.msg{
+    font-size:x-large;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    animation: colors 1s ease-in 0ms infinite alternate forwards;
+}
+.hide{
+    display: none;
+}
+@keyframes colors {
+    0%{
+        color: red;
+    }
+    50%{
+        color: green;
+    }
+    100%{
+        color: blue;
+    }
+}
